@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/username_size"
+        android:gravity="center" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_weight="0.65"
+        android:id="@+id/messages_list"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:divider="@null"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Message..."
+            android:layout_toLeftOf="@+id/btn_send"
+            android:maxLines="3"/>
+
+        <ImageButton
+            android:text="Send"
+            android:id="@+id/btn_send"
+            android:background="@mipmap/send_button"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

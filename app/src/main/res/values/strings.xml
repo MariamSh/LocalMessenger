@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="user_list">Users</string>
+    <string name="register"><u>Register</u></string>
+</resources>
